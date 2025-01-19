@@ -6,7 +6,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto forma parte de la asignatura **Laboratorio de Programación: R y Python (2024-2)** en la Facultad de Ciencias Sociales. El objetivo principal fue trabajar con datos sociodemográficos correspondientes al departamento de **Lambayeque**, enfocándonos en los ingresos laborales de los individuos encuestados.
+Este proyecto forma parte de la asignatura **Laboratorio de Programación: R y Python (2024-2)** en la Facultad de Ciencias Sociales de la PUCP. El objetivo principal fue trabajar con datos sociodemográficos correspondientes al departamento de **Lambayeque**, enfocándonos en los ingresos laborales de los individuos encuestados.
 
 El equipo desarrolló un enfoque basado en técnicas de **Machine Learning** para predecir ingresos laborales. Utilizamos herramientas como Python y R para analizar, procesar los datos y entrenar modelos. Además, se siguieron buenas prácticas de programación y análisis.
 
@@ -60,7 +60,6 @@ El equipo estuvo conformado por los siguientes integrantes:
 ## Docente
 
 - **Mauricio Vallejos**  
-  Correo: mauricio.vallejos@pucp.edu.pe
 
 ## Cómo Ejecutar
 
@@ -80,4 +79,4 @@ Este proyecto es de uso académico y está bajo licencia MIT.
 
 ---
 
-Si necesitas más cambios o detalles adicionales, házmelo saber. 😊
+S
