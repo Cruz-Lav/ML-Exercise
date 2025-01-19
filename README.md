@@ -1,5 +1,4 @@
 # ML-Exercise
-Gracias por compartir la estructura de las carpetas. Actualizaré el archivo `README.md` para que refleje esta organización:
 
 ---
 
