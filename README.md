@@ -1,9 +1,3 @@
-Gracias por compartir el archivo del encargo docente. Con base en ese documento (`TRABAJO FINAL.pdf`) y en el código extenso que has desarrollado en R y Python, he actualizado el `README.md` para alinearlo con los criterios de evaluación y objetivos del curso **Laboratorio de Programación: R y Python – PUCP (2024-2)**.
-
-Aquí tienes la versión final:
-
----
-
 # 🧠 Predicción del Ingreso Laboral en Lambayeque
 
 **Facultad de Ciencias Sociales – PUCP**
