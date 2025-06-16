@@ -9,11 +9,11 @@ Este proyecto corresponde al **trabajo final** del curso y se enfoca en el desar
 
 ## 👥 Integrantes
 
-* Zarit Dafra de la Cruz (20211687)
-* Angelly Gutiérrez (20210516)
-* Anderson Águila (20215872)
-* Jose Uriol (20203871)
-* Carlo Llerena (20203126)
+* Zarit Dafra de la Cruz 
+* Angelly Gutiérrez 
+* Anderson Águila 
+* Jose Uriol 
+* Carlo Llerena 
 
 ---
 
