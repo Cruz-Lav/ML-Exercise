@@ -1,82 +1,122 @@
-# ML-Exercise
+Gracias por compartir el archivo del encargo docente. Con base en ese documento (`TRABAJO FINAL.pdf`) y en el código extenso que has desarrollado en R y Python, he actualizado el `README.md` para alinearlo con los criterios de evaluación y objetivos del curso **Laboratorio de Programación: R y Python – PUCP (2024-2)**.
+
+Aquí tienes la versión final:
 
 ---
 
-# Análisis de Datos Sociodemográficos y Predicción de Ingresos Laborales en Lambayeque
+# 🧠 Predicción del Ingreso Laboral en Lambayeque
 
-## Descripción del Proyecto
+**Facultad de Ciencias Sociales – PUCP**
+**Curso: Laboratorio de Programación – R y Python (2024-2)**
 
-Este proyecto forma parte de la asignatura **Laboratorio de Programación: R y Python (2024-2)** en la Facultad de Ciencias Sociales de la PUCP. El objetivo principal fue trabajar con datos sociodemográficos correspondientes al departamento de **Lambayeque**, enfocándonos en los ingresos laborales de los individuos encuestados.
-
-El equipo desarrolló un enfoque basado en técnicas de **Machine Learning** para predecir ingresos laborales. Utilizamos herramientas como Python y R para analizar, procesar los datos y entrenar modelos. Además, se siguieron buenas prácticas de programación y análisis.
-
-## Contenidos del Proyecto
-
-1. **Estructura del Trabajo**
-   - Organización de carpetas siguiendo las pautas del curso.
-   - Scripts configurados para ejecutarse con la opción `Run all`.
-
-2. **Procesamiento de Información**
-   - Exploración de datos: estadísticas descriptivas, identificación y tratamiento de valores faltantes.
-   - Visualización de variables: histogramas, gráficos de densidad y boxplots.
-   - Detección y manejo de outliers.
-   - Análisis de correlaciones y relaciones entre variables clave.
-
-3. **Modelado Predictivo**
-   - División de datos en conjuntos de entrenamiento y prueba.
-   - Entrenamiento de un modelo **Lasso** para selección de variables importantes.
-   - Implementación de un modelo **Random Forest** con optimización de parámetros usando **GridSearch**.
-   - Validación cruzada para evaluar la robustez del modelo.
-   - Métricas de desempeño: **MAPE**, **R²**, y análisis de errores en el conjunto de prueba.
-
-## Organización de Carpetas
-
-La organización del proyecto es la siguiente:
-
-```
-PYTHON_TF_01/
-├── data/                     # Contiene datos utilizados en el proyecto
-│   ├── raw/                  # Datos originales sin procesar
-│   ├── intermed/             # Datos intermedios procesados
-│   └── final/                # Datos finales listos para modelado
-├── docs/                     # Documentación adicional del proyecto
-├── graphs/                   # Visualizaciones generadas durante el análisis
-├── programs/                 # Scripts de Python y R
-├── .RData                    # Archivo de configuración de R
-├── .Rhistory                 # Historial de comandos de R
-└── README.md                 # Descripción del proyecto
-```
-
-## Equipo de Trabajo
-
-El equipo estuvo conformado por los siguientes integrantes:
-
-- **Zarit de la Cruz** 
-- **Angelly Gutierrez** 
-- **Anderson Aguila** 
-- **Jose Uriol** 
-- **Carlo Llerena** 
-
-## Docente
-
-- **Mauricio Vallejos**  
-
-## Cómo Ejecutar
-
-1. Clonar el repositorio:  
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   ```
-2. Instalar dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Ejecutar los scripts de la carpeta `programs/` en el orden documentado en `docs/`.
-
-## Licencia
-
-Este proyecto es de uso académico y está bajo licencia MIT.
+Este proyecto corresponde al **trabajo final** del curso y se enfoca en el desarrollo de un modelo predictivo de **ingresos laborales** para la región de **Lambayeque**, empleando herramientas de análisis de datos, visualización estadística y algoritmos de aprendizaje automático en **R y Python**.
 
 ---
+
+## 👥 Integrantes
+
+* Zarit Dafra de la Cruz (20211687)
+* Angelly Gutiérrez (20210516)
+* Anderson Águila (20215872)
+* Jose Uriol (20203871)
+* Carlo Llerena (20203126)
+
+---
+
+## 🎯 Objetivo del trabajo
+
+Desarrollar un modelo de **machine learning** capaz de predecir los **ingresos laborales individuales** en base a variables sociodemográficas, educativas y laborales. Este modelo es evaluado y comparado mediante métricas como **MAPE**, **MPE**, **R²** y validación cruzada, según lo requerido en la rúbrica del curso.
+
+---
+
+## 🧱 Estructura del proyecto
+
+```
+ML-EXERCISE/
+├── data/
+│   ├── raw/                # Base original (formato Parquet)
+│   ├── interm/             # Base intermedia (.csv)
+│   └── final/              # Base limpia y recodificada (.xlsx)
+│
+├── graphs/                 # Visualizaciones (png)
+├── docs/
+│   └── TRABAJO FINAL.pdf   # Enunciado oficial del proyecto
+│
+├── programs/
+│   ├── Para limpieza de base de datos.R   # Limpieza, recodificación y EDA en R
+│   └── Machine Learning.ipynb             # Modelamiento en Python
+│
+└── README.md              # Descripción del proyecto (este archivo)
+```
+
+> ⚠️ **IMPORTANTE**: Colocar el archivo original `base_proyecto_final_.parquet` en la carpeta `data/raw/` para que los scripts se ejecuten correctamente.
+
+---
+
+## 🛠️ Herramientas utilizadas
+
+### En R
+
+* `tidyverse`, `arrow`, `corrplot`, `ggplot2`, `skimr`, `openxlsx`, `zoo`
+* Análisis exploratorio, tratamiento de outliers, y visualización
+
+### En Python
+
+* `pandas`, `scikit-learn`, `matplotlib`, `seaborn`
+* Modelos Lasso y Random Forest con `GridSearchCV`
+
+---
+
+## 🔍 Flujo metodológico
+
+### 🔹 1. Limpieza y transformación de datos
+
+* Conversión de `Parquet` a `CSV`
+* Filtrado para el departamento de **Lambayeque**
+* Recodificación de variables (educación, etnia, lengua materna, género, etc.)
+* Eliminación selectiva de valores faltantes y tratamiento de *outliers*
+* Guardado de base final como `.xlsx`
+
+### 🔹 2. Análisis exploratorio (EDA)
+
+* Histogramas, gráficos de densidad y barras
+* Boxplots para detectar *outliers* según variables categóricas
+* Matriz de correlación y detección de multicolinealidad
+* Análisis bivariado (experiencia vs ingreso)
+
+### 🔹 3. Modelado de predicción (ML)
+
+* División **80/20** para entrenamiento y prueba
+* Modelo **Lasso**:
+
+  * Selección de variables vía `GridSearchCV`
+  * Métrica principal: **MAPE**
+* Modelo **Random Forest**:
+
+  * Ajuste de hiperparámetros (`n_estimators`)
+  * Reporte de métricas: MAPE, MPE, R², % dentro del ±20%
+  * Evaluación de robustez con **validación cruzada**
+
+---
+
+## 📊 Resultados clave
+
+* **Lasso** identificó como variables relevantes: educación, pobreza, experiencia, edad cuadrática y sector estatal.
+* **Random Forest** presentó **mejor capacidad predictiva**, con menor MAPE y mayor robustez.
+* Las **variables con mayor impacto positivo** sobre el ingreso fueron: educación superior, experiencia moderada, empleo en el sector privado, y trabajos altamente calificados.
+* **Pobreza, edad avanzada y trabajo estatal** correlacionaron negativamente con el ingreso.
+
+---
+
+## 📈 Visualizaciones destacadas
+
+Todas disponibles en `/graphs/`:
+
+* Distribuciones: edad, ingresos, experiencia
+* Frecuencias: sexo, educación, lengua materna, pobreza
+* Boxplots: ingreso laboral por categorías
+* Correlaciones: detección de multicolinealidad
+* Dispersión ingreso vs. experiencia (lineal y cuadrática)
+* Importancia de variables en Random Forest
 
 
